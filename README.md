@@ -9,4 +9,11 @@ $ aws s3api create-bucket --bucket spring-cloud-bucket --create-bucket-configura
     "Location": "http://spring-cloud-bucket.s3.amazonaws.com/"
 }
 ```
-
+- Run the app:
+```bash
+$ ./mvnw spring-boot:run
+```
+- Download it:
+```bash
+$ http://localhost:8080/download/spring-cloud-bucket/example/beer.jpg
+```
