@@ -11,7 +11,7 @@ $ aws s3api create-bucket --bucket spring-cloud-bucket --create-bucket-configura
 ```
 - Run the app:
 ```bash
-$ ./mvnw spring-boot:run
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--aws.credentials.accessKey=<your_access_key>,--aws.credentials.secretKey=<your_secret_key>
 ```
 - Download it:
 ```bash
